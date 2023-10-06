@@ -1,7 +1,7 @@
-import Post from "../posts/components/Post";
-import { useGetPostsQuery } from "../posts/postsApi";
+import { useGetPostsQuery } from "../entities/postsApi";
 import { useState, useEffect } from "react";
-import ClipLoaderComponents from "../../shared/components/ClipLoaderComponent";
+import ClipLoaderComponent from "../shared/ClipLoaderComponent";
+import Post from "../widgets/Post";
 
 const Home = () => {
   const [page, setPage] = useState(1);
@@ -32,7 +32,7 @@ const Home = () => {
     <div className="flex flex-col max-w-[640px] m-auto items-center">
       <div className="w-full flex flex-col gap-y-5">
         {isLoading ? (
-          <ClipLoaderComponents/>
+          <ClipLoaderComponent/>
         ) : (
           data.map((post) => (
             <Post

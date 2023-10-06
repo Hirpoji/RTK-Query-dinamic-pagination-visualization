@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "../shared/Button";
 
 function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -27,12 +27,12 @@ const Post = ({ id, title, body }) => {
         {title}
       </div>
       <p className="text-left">{truncatedDescription}</p>
-      <Link
-        to={`/posts/${id}`}
+      <Button
+        route={`/posts/${id}`}
         className="p-2 px-5 bg-black hover:opacity-80 rounded-xl text-white w-fit font-bold"
       >
         Просмотр
-      </Link>
+      </Button>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import "./App.css";
-import Home from "./features/pages/Home";
-import FullPost from "./features/pages/FullPost";
+import Home from "./pages/Home";
+import FullPost from "./pages/FullPost";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 

@@ -1,6 +1,6 @@
 import { ClipLoader } from "react-spinners";
 
-const ClipLoaderComponents = () => {
+const ClipLoaderComponent = () => {
   return (
     <ClipLoader
       color={"#000"}
@@ -11,4 +11,4 @@ const ClipLoaderComponents = () => {
   );
 };
 
-export default ClipLoaderComponents;
+export default ClipLoaderComponent;
